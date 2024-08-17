@@ -4,19 +4,19 @@ use std::arch::x86_64::_CMP_FALSE_OQ;
 // - `price`, an unsigned integer
 // - `quantity`, an unsigned integer
 struct Order {
-    price:u32,
-    quantity:u32,
+    price: u32,
+    quantity: u32,
 }
 // It should also have a method named `is_available` that returns a `true` if the quantity is
 // greater than 0, otherwise `false`.
 impl Order {
-fn is_available (self)->bool{
-    if self.quantity>0 {
-        true
-    } else {
-    false
+    fn is_available(self) -> bool {
+        if self.quantity > 0 {
+            true
+        } else {
+            false
+        }
     }
-}
 }
 
 #[cfg(test)]
