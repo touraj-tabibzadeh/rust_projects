@@ -1,5 +1,3 @@
-use std::arch::x86_64::_CMP_FALSE_OQ;
-
 // Define a struct named `Order` with the following fields:
 // - `price`, an unsigned integer
 // - `quantity`, an unsigned integer
