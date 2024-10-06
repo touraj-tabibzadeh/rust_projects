@@ -13,7 +13,7 @@ mod tests {
 
     #[test]
     fn string_size() {
-        assert_eq!(size_of::<String>(),24 );
+        assert_eq!(size_of::<String>(), 24);
     }
 
     #[test]

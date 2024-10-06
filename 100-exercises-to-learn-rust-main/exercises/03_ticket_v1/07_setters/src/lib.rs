@@ -10,10 +10,9 @@ pub struct Ticket {
 }
 
 impl Ticket {
+    //validation
 
-    //validation        
-
-     fn validate(title:&String,description:&String,status:&String){
+    fn validate(title: &String, description: &String, status: &String) {
         if title.is_empty() {
             panic!("Title cannot be empty");
         }
@@ -33,8 +32,7 @@ impl Ticket {
 
     //constructor
     pub fn new(title: String, description: String, status: String) -> Ticket {
-        
-        Self::validate(&title,&description,&status);
+        Self::validate(&title, &description, &status);
         Ticket {
             title,
             description,
@@ -65,7 +63,7 @@ impl Ticket {
         self.description = new_description;
     }
     pub fn set_status(&mut self, new_status: String) {
-        Self::validate(&self.title, &self.description,&new_status);
+        Self::validate(&self.title, &self.description, &new_status);
         self.status = new_status;
     }
 }
